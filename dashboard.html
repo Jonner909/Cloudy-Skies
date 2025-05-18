@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CloudySkies | Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Air Quality Dashboard</h1>
+    <nav>
+      <a href="homepage.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="dashboard.html">Dashboard</a>
+    </nav>
+  </header>
+  <main>
+    <section>
+     <h2>Search for a City</h2>
+<input type="text" id="cityInput" placeholder="Enter city name..." />
+<button id="searchBtn">Search</button>
+
+<h3>Or select a city:</h3>
+<select id="citySelect">
+  <option value="">-- Choose a city --</option>
+</select>
+<div id="results"></div>
+<canvas id="aqiChart"></canvas> 
+    </section>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+  <script src="dashboard.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="dashboard.js"></script>
+</body>
+</html>
